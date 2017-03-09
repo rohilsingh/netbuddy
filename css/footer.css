@@ -1,0 +1,11 @@
+#footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    font-family: cursive;
+    background-color: darkseagreen;
+    color: teal;
+    z-index: 5;
+    overflow: hidden;
+}

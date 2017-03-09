@@ -1,0 +1,67 @@
+<user>
+    <profile>
+        <name>
+        <username>
+        <dp>
+        <dob>
+        <sex>
+        <contacts>
+            <contact type="home">
+        </contacts>
+        <qualification>
+            <degree college="name" year="year">
+        </qualification>
+        <profession>
+        <relationship_status>
+        <interested_in>
+        <views>
+            <about type="  ">
+        </views>
+        <languages>
+            <language></language>
+            .
+            .
+            .
+
+        </languages>
+        <places>
+        <city type=>
+        </places>
+        <about me>
+        </about me>
+        <events>
+            <event></event>
+            .
+            .
+            .
+        </events>
+        <status>
+        </status>
+        </profile>
+
+    <friends>
+        <friend>
+            <person >
+                <username>
+                </username>
+                <chat>
+                    <message>
+                    <time>
+                    <to>
+                    <from>
+                    <filetype>
+                </chat>
+            </person>
+        .
+        .
+        .
+        .
+        </friend>
+        <friend_request>
+            <user_friend  type="sender/receiver">
+                <username>
+                <name>
+            </user_friend>
+        </friend_request>
+    <friends>
+</user>

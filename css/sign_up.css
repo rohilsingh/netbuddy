@@ -1,0 +1,18 @@
+body{
+    background-image: url("../images/login_bg.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#sign_up{
+    position: relative;
+    top: 15%;
+    text-align: center;
+
+}
+
+input[type='email']{
+    font-family: cursive;
+    font-size: large;
+}

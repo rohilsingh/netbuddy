@@ -1,0 +1,75 @@
+<?php
+$xmlname="xml/$username.xml";
+$myfile=fopen($xmlname,"w");        //This creates xml file for new user
+//$xml1=new DOMDocument();
+//$xml1->createElement('user');
+//$xml1->save($name);
+$xml_string = <<<XML
+<?xml version="1.0" encoding="UTF-8"?>
+<user>
+</user>
+XML;
+$xml1 = simplexml_load_string($xml_string);
+$xml1->asXML($xmlname);
+fclose($xmlname);
+$xml=simplexml_load_file($xmlname);
+//$xml=new SimpleXMLElement($xml1);
+//$xml->addChild('user');
+$xml->addChild('profile');
+$xml->addChild('friends');
+$xml->friends->addChild('friend');
+$xml->friends->addChild('friend_request');
+$xml->profile->addChild('name');
+$xml->profile->addChild('username');
+$xml->profile->addChild('dob');
+$xml->profile->addChild('sex');
+$xml->profile->addChild('dp');
+$xml->profile->addChild('contacts');
+$xml->profile->addChild('qualification');
+$xml->profile->addChild('profession');
+$xml->profile->addChild('relationship_status');
+$xml->profile->addChild('interested_in');
+$xml->profile->addChild('views');
+$xml->profile->addChild('languages');
+$xml->profile->addChild('places');
+$xml->profile->addChild('about_me');
+$xml->profile->addChild('events');
+$xml->profile->addChild('status');
+//$xml->profile->qualification->addChild('degree');
+//$xml->profile->views->addChild('about');
+//$xml->profile->languages->addChild('language');
+//$xml->profile->places_lived->addChild('places');
+//$xml->profile->events->addChild('event');
+$xml->profile->name=$name;
+$xml->profile->username=$username;
+$xml->profile->dob=$dob;
+$xml->profile->sex=$sex;
+$imgpath="images/{$username}/";
+$imgpath_male="images/{$username}/dp_male.jpg";
+$imgpath_female="images/{$username}/dp_female.jpg";
+if($sex=='male'){
+    mkdir($imgpath,0777,true);
+    copy("images/dp_male.jpg",$imgpath_male);
+    $xml->profile->dp=$imgpath_male;
+}
+else{
+    mkdir($imgpath,0777,true);
+    copy('images/dp_female.jpg',$imgpath_female);
+    $xml->profile->dp=$imgpath_female;
+}
+$xml->asXML($xmlname);
+$xml1=simplexml_load_file('xml/users.xml');
+$xml1->addChild('user');
+$len=$xml1->count()-1;
+$xml1->user[$len]->addChild('name');
+$xml1->user[$len]->name=$name;
+$xml1->user[$len]->addChild('username');
+$xml1->user[$len]->username=$username;
+$xml1->user[$len]->addChild('dp');
+$xml1->user[$len]->dp=$xml->profile->dp;
+$xml1->user[$len]->addChild('relationship_status');
+$xml1->user[$len]->addChild('about_me');
+$xml1->user[$len]->addChild('sex');
+$xml1->user[$len]->sex=$sex;
+$xml1->asXML('xml/users.xml');
+?>

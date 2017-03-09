@@ -1,0 +1,8 @@
+#profile_bar{
+    position: fixed;
+    width: 94.5%;
+    height: 10%;
+    right: 0%;
+    bottom: 50%;
+    background-color: cornflowerblue;
+}

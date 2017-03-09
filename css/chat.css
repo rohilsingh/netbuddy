@@ -1,0 +1,11 @@
+#body{
+    position: relative;
+    height:100%;
+    width:100%;
+    top: 5%;
+    left: 5%;
+}
+
+table{
+    margin-left:50px;
+}

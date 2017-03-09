@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#header{
+    width: 100%;
+    height: 5%;
+    background-color: darkseagreen;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    overflow: hidden;
+    position: fixed;
+    z-index: 5;
+}
+
+#search{
+    position: relative;
+    width: 2.5%;
+    height: 70%;
+    top: -15%;
+}
+
+#search_bar{
+    position: relative;
+    width: 40%;
+    height: 70%;
+    top: -30%;
+    border: ThreeDShadow;
+}
+
+input[type=text]{
+    font-family: cursive;
+    font-size: large;
+}
+
+#logo{
+    width:10%;
+    height: 100%;
+}
+
+#logout{
+    font-family: cursive;
+    font-size: large;
+    height: 90%;
+    position: relative;
+    top:-30%;
+    right: -35%;
+    background-color: cornflowerblue;
+    border-radius: 25%;
+}
+
+#header_form{
+    display: inline;
+}

@@ -1,0 +1,44 @@
+#body{
+    position: relative;
+    top: 5%;
+    left: 5%;
+    height: 92%;
+    width: 95%;
+    margin-right: 0%;
+    z-index: 1;
+}
+
+#profile{
+    background-color: aquamarine;
+    height:100%;
+    width: 60%;
+    align-content: center;
+    -webkit-align-content: center;
+    padding-left: 3%;
+}
+
+#chat_bar{
+    background-color: crimson;
+    height: 100%;
+    width: 40%;
+    clear: right;
+    top: -100%;
+    right: -60%;
+    position: relative;
+}
+
+#dp{
+    position: relative;
+    right: -30%;
+}
+
+#user_info{
+    position: relative;
+    right: -10%;
+    overflow-wrap: normal;
+}
+
+marquee{
+    font-size: larger;
+    font-family: cursive;
+}

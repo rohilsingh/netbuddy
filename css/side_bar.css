@@ -1,0 +1,79 @@
+#side_bar{
+    position: fixed;
+    display: block;
+    width: 5%;
+    height: 95%;
+    background-color: antiquewhite;
+    text-align: center;
+    text-height: max-size;
+    top: 5%;
+    z-index: 5;
+}
+#side_bar_a{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 10%;
+    width: 250%;
+    height: 8%;
+    left: -75%;
+    text-effect:emboss;
+    background-color: darkseagreen;
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px teal;
+    text-shadow: 1px 1px teal;
+}
+#side_bar_a:hover{
+    background-color: cyan;
+}
+#side_bar_b:hover{
+    background-color: cyan;
+}
+#side_bar_c:hover{
+    background-color: cyan;
+}
+#side_bar_d:hover{
+    background-color: cyan;
+}
+#side_bar_b{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 25%;
+    width: 250%;
+    height: 8%;
+    left: -75%;
+    text-effect:emboss;
+    background-color: darkseagreen;
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px teal;
+    text-shadow: 1px 1px teal;
+}
+#side_bar_c{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 40%;
+    width: 250%;
+    height: 8%;
+    left: -75%;
+    text-effect:emboss;
+    background-color: darkseagreen;
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px teal;
+    text-shadow: 1px 1px teal;
+}
+#side_bar_d{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: relative;
+    top: 55%;
+    width: 250%;
+    height: 8%;
+    left: -75%;
+    text-effect:emboss;
+    background-color: darkseagreen;
+    border-radius: 25%;
+    box-shadow: 5px 5px 5px teal;
+    text-shadow: 1px 1px teal;
+}
